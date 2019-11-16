@@ -1,0 +1,15 @@
+<!-- templates/index.html -->
+<html>
+  <head>
+    <title>Flask demo</title>
+  </head>
+  <body>
+    <h1>Flask demo projekt</h1>
+    <p>See projekt kasutab Flask'i, et back-end'i kaudu pokeapi'st andmeid küsida ja kasutajale serveerida.</p>
+    <br>
+    <p>Erinevad tegevused:</p>
+    <ul>
+      <li><a href="{{ url_for('get_pokemon') }}">Otsi pokemon'i</a></li>
+    </ul>
+  </body>
+</html>
