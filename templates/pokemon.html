@@ -5,10 +5,22 @@
   </head>
   <body>
     <form method="POST">
-        Pokemon'i nimi: <input type="text" name="pokemon_name"><br>
+        Pokemon'i nimi: <input type="text" name="pokemonName"><br>
         <p><b>NB:</b> Kõik tähed peavad olema väikesed</p>
         <input type="submit" value="Otsi"><br>
     </form>
-    <p>{{name}}</p>
+    <hr>
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Image</th>
+      </tr>
+      <tr>
+        <td>{{ ID }}</td>
+        <td>{{ name }}</td>
+        <td><img src={{ image }}></td>
+      </tr>
+    </table>
   </body>
 </html>
